@@ -20,8 +20,9 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				montserrat: ['Montserrat', 'sans-serif'],
-				ibmplex: ['IBM Plex Sans', 'sans-serif'],
+				montserrat: ['Onest', 'sans-serif'],
+				ibmplex: ['Onest', 'sans-serif'],
+				onest: ['Onest', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
