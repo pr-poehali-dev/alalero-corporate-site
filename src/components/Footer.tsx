@@ -1,7 +1,8 @@
+import { Link } from 'react-router-dom';
 import { useLang } from '@/contexts/LangContext';
 
 const Footer = () => {
-  const { t } = useLang();
+  const { t, lang } = useLang();
   const f = t.footer;
 
   const scrollTo = (href: string) => {
@@ -29,8 +30,11 @@ const Footer = () => {
                 AlAero Group
               </span>
             </div>
-            <p className="font-ibmplex text-white/40 text-sm leading-relaxed max-w-xs">
+            <p className="font-ibmplex text-white/40 text-sm leading-relaxed max-w-xs mb-4">
               {f.description}
+            </p>
+            <p className="font-ibmplex text-white/20 text-xs">
+              {lang === 'ru' ? 'Штаб-квартира: Международный аэропорт Кольцово, Екатеринбург' : 'HQ: Koltsovo International Airport, Yekaterinburg'}
             </p>
           </div>
 
@@ -58,20 +62,22 @@ const Footer = () => {
               {f.contactsTitle}
             </span>
             <div className="space-y-2">
-              <p className="font-ibmplex text-white/50 text-sm">
-                📍 {t.contacts.address.split(',').slice(-2).join(',')}
+              <p className="font-ibmplex text-white/50 text-sm leading-relaxed">
+                📍 {lang === 'ru'
+                  ? 'г. Екатеринбург, ул. Бахчиванджи, 55А'
+                  : '55A Bakhchivandji St., Yekaterinburg'}
               </p>
               <a
-                href={`tel:${t.contacts.phone.replace(/\s/g, '')}`}
+                href="tel:+73433825575"
                 className="font-ibmplex text-white/50 text-sm block hover:text-white transition-colors"
               >
-                📞 {t.contacts.phone}
+                📞 +7 (343) 382 55 75
               </a>
               <a
-                href={`mailto:${t.contacts.email}`}
+                href="mailto:press@umc.aero"
                 className="font-ibmplex text-white/50 text-sm block hover:text-white transition-colors"
               >
-                ✉️ {t.contacts.email}
+                ✉️ press@umc.aero
               </a>
             </div>
           </div>
@@ -80,18 +86,35 @@ const Footer = () => {
         {/* Bottom */}
         <div className="border-t border-white/10 pt-8 space-y-3">
           <p className="font-ibmplex text-white/30 text-xs">{f.legal}</p>
-          {f.legalEntities.map((entity, i) => (
-            <p key={i} className="font-ibmplex text-white/20 text-xs">{entity}</p>
-          ))}
-          <div className="flex flex-wrap gap-4 pt-2">
-            <button className="font-ibmplex text-white/20 text-xs hover:text-white/40 transition-colors underline">
-              {f.privacyPolicy}
-            </button>
-            <button className="font-ibmplex text-white/20 text-xs hover:text-white/40 transition-colors underline">
-              {f.mediaInfo}
-            </button>
+
+          <div className="space-y-1">
+            {f.legalEntities.map((entity, i) => (
+              <p key={i} className="font-ibmplex text-white/20 text-xs">{entity}</p>
+            ))}
           </div>
-          <p className="font-ibmplex text-white/15 text-xs">{f.mediaLabel}</p>
+
+          <div className="flex flex-wrap gap-x-4 gap-y-2 pt-2">
+            <Link
+              to="/privacy-policy"
+              className="font-ibmplex text-white/30 text-xs hover:text-white/60 transition-colors underline"
+            >
+              {f.privacyPolicy}
+            </Link>
+            <Link
+              to="/media-info"
+              className="font-ibmplex text-white/30 text-xs hover:text-white/60 transition-colors underline"
+            >
+              {f.mediaInfo}
+            </Link>
+          </div>
+
+          <div className="pt-1 border-t border-white/5">
+            <p className="font-ibmplex text-white/15 text-xs leading-relaxed">
+              {lang === 'ru'
+                ? 'СМИ «TRANSAERO» | Свидетельство ЭЛ № ФС77-86800 от 05.02.2024 | Учредитель: ООО «ТРАНСАЭРО СЕРВИС» | Гл. редактор: Нечипуренко А.Д. | 18+'
+                : 'Media TRANSAERO | Certificate ЭЛ № ФС77-86800 dated 05.02.2024 | Founder: TRANSAERO SERVICES LLC | Editor: A.D. Nechipurenko | 18+'}
+            </p>
+          </div>
         </div>
       </div>
     </footer>
