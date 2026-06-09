@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useRevealAll } from '@/hooks/useReveal';
 import { useLang } from '@/contexts/LangContext';
 import Icon from '@/components/ui/icon';
@@ -10,6 +11,7 @@ const ContactsSection = () => {
 
   const [form, setForm] = useState({
     name: '', company: '', email: '', phone: '', message: '', consent: false,
+    website: '', // honeypot
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [sent, setSent] = useState(false);
@@ -28,6 +30,7 @@ const ContactsSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (form.website) return; // honeypot — бот заполнил скрытое поле
     if (validate()) {
       setSent(true);
     }
@@ -188,11 +191,26 @@ const ContactsSection = () => {
                       {form.consent && <Icon name="Check" size={10} className="text-white" />}
                     </div>
                     <span className="font-ibmplex text-black/50 text-xs leading-relaxed">
-                      {c.fields.consent}
+                      {lang === 'ru' ? 'Я согласен на обработку персональных данных в соответствии с ' : 'I agree to the processing of personal data in accordance with the '}
+                      <Link to="/privacy-policy" className="underline hover:text-black transition-colors">
+                        {lang === 'ru' ? 'Политикой конфиденциальности' : 'Privacy Policy'}
+                      </Link>
                     </span>
                   </label>
                   {errors.consent && <span className="font-ibmplex text-red-500 text-xs mt-1 block">{errors.consent}</span>}
                 </div>
+
+                {/* Honeypot — скрыто от людей, видно ботам */}
+                <input
+                  type="text"
+                  name="website"
+                  value={form.website}
+                  onChange={e => setForm({ ...form, website: e.target.value })}
+                  tabIndex={-1}
+                  autoComplete="off"
+                  aria-hidden="true"
+                  style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px', overflow: 'hidden' }}
+                />
 
                 <button
                   type="submit"
