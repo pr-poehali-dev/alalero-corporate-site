@@ -36,19 +36,6 @@ const HeroSection = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 pt-32 pb-24">
         <div className="max-w-4xl">
-          {/* Label */}
-          <div
-            className={`flex items-center gap-3 mb-8 transition-all duration-700 ${
-              loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
-            }`}
-            style={{ transitionDelay: '0.1s' }}
-          >
-            <span className="w-8 h-px bg-white/40" />
-            <span className="font-montserrat text-white/40 text-xs tracking-[0.3em] uppercase">
-              {t.hero.label}
-            </span>
-          </div>
-
           {/* Main title */}
           <h1
             className={`text-white mb-6 transition-all duration-700 ${
