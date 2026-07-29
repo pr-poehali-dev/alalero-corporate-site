@@ -27,80 +27,76 @@ const ServicesSection = () => {
           {t.services.intro}
         </p>
 
-        {/* Services grid */}
-        <div className="grid lg:grid-cols-3 gap-0 border border-white/10">
+        {/* Services list (accordion) */}
+        <div className="border-t border-white/10">
           {t.services.list.map((service, i) => (
             <div
               key={service.id}
-              className={`reveal reveal-delay-${(i % 3) + 1} border-b border-white/10 lg:border-r lg:[&:nth-child(3n)]:border-r-0 p-8 cursor-pointer group transition-colors duration-300 ${
+              className={`reveal reveal-delay-${(i % 5) + 1} border-b border-white/10 transition-colors duration-300 ${
                 active === service.id ? 'bg-white' : 'hover:bg-white/5'
               }`}
-              onClick={() => setActive(active === service.id ? null : service.id)}
             >
-              <div className="mb-6">
+              <button
+                onClick={() => setActive(active === service.id ? null : service.id)}
+                className="w-full text-left p-6 lg:p-8 flex items-start sm:items-center gap-5 lg:gap-8 cursor-pointer"
+              >
                 <Icon
                   name={service.icon as 'Plane'}
                   size={24}
-                  className={`transition-colors duration-300 ${
+                  className={`shrink-0 transition-colors duration-300 ${
                     active === service.id ? 'text-black' : 'text-white/40 group-hover:text-white'
                   }`}
                 />
-              </div>
 
-              <div className="mb-2">
-                <span className={`font-montserrat text-xs tracking-widest uppercase ${active === service.id ? 'text-black/40' : 'text-white/20'}`}>
-                  {service.titleEn}
-                </span>
-              </div>
+                <div className="flex-1 min-w-0">
+                  <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-4">
+                    <h3 className={`font-montserrat font-bold text-lg leading-tight transition-colors ${
+                      active === service.id ? 'text-black' : 'text-white'
+                    }`}>
+                      {service.title}
+                    </h3>
+                    <span className={`font-montserrat text-xs tracking-widest uppercase shrink-0 ${active === service.id ? 'text-black/40' : 'text-white/20'}`}>
+                      {service.titleEn}
+                    </span>
+                  </div>
+                  <p className={`font-ibmplex text-sm leading-relaxed mt-1 transition-colors ${
+                    active === service.id ? 'text-black/60' : 'text-white/40'
+                  }`}>
+                    {service.desc}
+                  </p>
+                </div>
 
-              <h3 className={`font-montserrat font-bold text-lg mb-3 leading-tight transition-colors ${
-                active === service.id ? 'text-black' : 'text-white'
-              }`}>
-                {service.title}
-              </h3>
-
-              <p className={`font-ibmplex text-sm leading-relaxed transition-colors ${
-                active === service.id ? 'text-black/60' : 'text-white/40'
-              }`}>
-                {service.desc}
-              </p>
+                <Icon
+                  name={active === service.id ? 'ChevronUp' : 'ChevronDown'}
+                  size={18}
+                  className={`shrink-0 transition-colors duration-300 ${
+                    active === service.id ? 'text-black/40' : 'text-white/20'
+                  }`}
+                />
+              </button>
 
               {/* Expanded details */}
               {active === service.id && (
-                <div className="mt-6 space-y-4">
-                  {service.details.map((block, bi) => (
-                    <div key={bi}>
-                      <div className="font-montserrat font-semibold text-black text-xs tracking-widest uppercase mb-2">
-                        {block.subtitle}
+                <div className="bg-white px-6 lg:px-8 pb-8 pl-[3.75rem] lg:pl-[4.75rem]">
+                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {service.details.map((block, bi) => (
+                      <div key={bi}>
+                        <div className="font-montserrat font-semibold text-black text-xs tracking-widest uppercase mb-2">
+                          {block.subtitle}
+                        </div>
+                        <ul className="space-y-1">
+                          {block.items.map((item, ii) => (
+                            <li key={ii} className="font-ibmplex text-black/60 text-xs flex gap-2">
+                              <span className="text-black/30 shrink-0">—</span>
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
                       </div>
-                      <ul className="space-y-1">
-                        {block.items.map((item, ii) => (
-                          <li key={ii} className="font-ibmplex text-black/60 text-xs flex gap-2">
-                            <span className="text-black/30 shrink-0">—</span>
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
               )}
-
-              <div className={`mt-4 flex items-center gap-2 font-montserrat text-xs tracking-widest uppercase transition-colors ${
-                active === service.id ? 'text-black/40' : 'text-white/20 group-hover:text-white/40'
-              }`}>
-                {active === service.id ? (
-                  <>
-                    <Icon name="ChevronUp" size={12} />
-                    <span>{t.nav.services === 'Услуги' ? 'Свернуть' : 'Collapse'}</span>
-                  </>
-                ) : (
-                  <>
-                    <Icon name="ChevronDown" size={12} />
-                    <span>{t.nav.services === 'Услуги' ? 'Подробнее' : 'Details'}</span>
-                  </>
-                )}
-              </div>
             </div>
           ))}
         </div>
