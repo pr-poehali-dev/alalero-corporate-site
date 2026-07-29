@@ -3,7 +3,7 @@ import { useLang } from '@/contexts/LangContext';
 import Icon from '@/components/ui/icon';
 
 const Footer = () => {
-  const { t, lang } = useLang();
+  const { t } = useLang();
   const f = t.footer;
   const c = t.contacts;
 
@@ -21,7 +21,14 @@ const Footer = () => {
         <div className="grid lg:grid-cols-3 gap-12 lg:gap-16 mb-16">
           {/* Brand */}
           <div>
-            <img src="/logo/logo-white.png" alt="AlAero Group" className="h-8 w-auto mb-5" />
+            <span className="inline-flex flex-col items-center leading-none mb-5">
+              <span className="font-montserrat font-light text-white text-2xl tracking-tight">
+                AlAero
+              </span>
+              <span className="font-montserrat font-normal text-white/40 text-sm tracking-[0.12em] -mt-0.5">
+                Group
+              </span>
+            </span>
             <p className="font-ibmplex text-white/40 text-sm leading-relaxed max-w-xs">
               {f.description}
             </p>
@@ -81,12 +88,6 @@ const Footer = () => {
             {f.privacyPolicy}
           </Link>
         </div>
-
-        <p className="font-ibmplex text-white/15 text-xs mt-4">
-          {lang === 'ru'
-            ? 'Штаб-квартира: Международный аэропорт Кольцово, Россия, Екатеринбург'
-            : 'HQ: Koltsovo International Airport, Russia, Yekaterinburg'}
-        </p>
       </div>
     </footer>
   );

@@ -15,8 +15,11 @@ const PrivacyContent = () => {
     <div className="min-h-screen bg-white">
       {/* Top bar */}
       <div className="bg-black px-6 lg:px-12 py-4 flex items-center justify-between">
-        <Link to="/" className="flex items-center">
-          <img src="/logo/logo-white.png" alt="AlAero Group" className="h-6 w-auto" />
+        <Link to="/" className="flex items-center gap-3 group">
+          <span className="w-5 h-px bg-white/40 group-hover:bg-white transition-colors duration-200" />
+          <span className="font-montserrat text-white/90 group-hover:text-white text-sm tracking-[0.25em] uppercase transition-colors duration-200">
+            AlAero Group
+          </span>
         </Link>
         <Link to="/" className="flex items-center gap-2 font-ibmplex text-white/50 text-sm hover:text-white transition-colors">
           <Icon name="ArrowLeft" size={14} />
@@ -42,14 +45,13 @@ const PrivacyContent = () => {
             </h2>
             <p>
               {isRu
-                ? 'Настоящая Политика конфиденциальности определяет порядок обработки и защиты персональных данных пользователей сайта UMC.AERO.'
-                : 'This Privacy Policy defines the procedure for processing and protecting personal data of UMC.AERO website users.'}
+                ? 'Настоящая Политика конфиденциальности определяет порядок обработки и защиты персональных данных пользователей сайта alaero.group.'
+                : 'This Privacy Policy defines the procedure for processing and protecting personal data of alaero.group website users.'}
             </p>
             <div className="mt-4 space-y-2">
-              <p className="font-medium text-black">{isRu ? 'Операторы персональных данных:' : 'Personal Data Operators:'}</p>
+              <p className="font-medium text-black">{isRu ? 'Оператор персональных данных:' : 'Personal Data Operator:'}</p>
               <ul className="space-y-1 pl-4">
-                <li className="flex gap-2"><span className="text-black/30">—</span> ООО «ТРАНСАЭРО СЕРВИС» ИНН 6685158438, ОГРН 1196658004707</li>
-                <li className="flex gap-2"><span className="text-black/30">—</span> ООО «ПРИМЭЙР-СЕРВИС» ИНН 6658214500, ОГРН 1056602819426</li>
+                <li className="flex gap-2"><span className="text-black/30">—</span> {isRu ? 'Группа компаний AlAero' : 'AlAero Group'}</li>
               </ul>
             </div>
           </section>
@@ -74,8 +76,8 @@ const PrivacyContent = () => {
             </h2>
             <ul className="space-y-2 pl-4">
               {(isRu
-                ? ['Обработка запросов через форму обратной связи', 'Предоставление информации о наших услугах', 'Улучшение работы сайта', 'Выполнение требований законодательства РФ']
-                : ['Processing requests through the contact form', 'Providing information about our services', 'Improving website performance', 'Compliance with Russian legislation']
+                ? ['Обработка обращений и запросов', 'Предоставление информации о наших услугах', 'Улучшение работы сайта', 'Выполнение требований законодательства РФ']
+                : ['Processing inquiries and requests', 'Providing information about our services', 'Improving website performance', 'Compliance with Russian legislation']
               ).map((item, i) => (
                 <li key={i} className="flex gap-2"><span className="text-black/30">—</span>{item}</li>
               ))}
@@ -118,8 +120,8 @@ const PrivacyContent = () => {
             </h2>
             <p>{isRu ? 'По вопросам обработки персональных данных:' : 'For personal data processing inquiries:'}</p>
             <div className="mt-3 space-y-1">
-              <p>Email: <a href="mailto:press@umc.aero" className="text-black hover:underline">press@umc.aero</a></p>
-              <p>{isRu ? 'Телефон:' : 'Phone:'} <a href="tel:+73433825575" className="text-black hover:underline">+7 (343) 382 55 75</a></p>
+              <p>Email: <a href="mailto:info@alaero.group" className="text-black hover:underline">info@alaero.group</a></p>
+              <p>{isRu ? 'Телефон:' : 'Phone:'} <a href="tel:+73432297755" className="text-black hover:underline">+7 (343) 229-77-55</a></p>
             </div>
           </section>
         </div>

@@ -156,12 +156,11 @@ export const translations = {
     },
     contacts: {
       sectionLabel: 'Контакты',
-      title: 'Свяжитесь с нами',
       hqTitle: 'Штаб-квартира',
       address: '620025, Свердловская область, г. Екатеринбург, ул. Бахчиванджи, д. 55А',
-      airport: 'Международный аэропорт Кольцово',
-      phone: '+7 (343) 382 55 75',
-      email: 'press@umc.aero',
+      airport: 'Международный аэропорт Кольцово (SVX)',
+      phone: '+7 (343) 229-77-55',
+      email: 'info@alaero.group',
       workHours: 'Режим работы: 24/7',
     },
     footer: {
@@ -332,12 +331,11 @@ export const translations = {
     },
     contacts: {
       sectionLabel: 'Contact',
-      title: 'Get in Touch',
       hqTitle: 'Headquarters',
       address: '55A Bakhchivandji St., Yekaterinburg, Sverdlovsk Oblast, 620025',
-      airport: 'Koltsovo International Airport',
-      phone: '+7 (343) 382 55 75',
-      email: 'press@umc.aero',
+      airport: 'Koltsovo International Airport (SVX)',
+      phone: '+7 (343) 229-77-55',
+      email: 'info@alaero.group',
       workHours: 'Working hours: 24/7',
     },
     footer: {
