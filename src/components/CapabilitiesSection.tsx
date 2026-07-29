@@ -3,8 +3,6 @@ import { useRevealAll } from '@/hooks/useReveal';
 import { useLang } from '@/contexts/LangContext';
 import Icon from '@/components/ui/icon';
 
-const bookingSystems = ['Sirena-Travel (Mixvel)', 'Sabre', 'Amadeus', 'Gabriel', 'ТАИС НСБ', 'Sirena 2.0'];
-
 const teamExpertise = {
   ru: [
     'Аккредитованные агенты в системах Sirena-Travel, Sabre, Amadeus, Gabriel, ТАИС НСБ',
@@ -64,30 +62,8 @@ const CapabilitiesSection = () => {
           ))}
         </div>
 
-        {/* Booking systems */}
-        <div className="reveal mt-12 bg-white border border-black/10 p-8">
-          <div className="flex items-center gap-3 mb-6">
-            <Icon name="Monitor" size={18} className="text-black/30" />
-            <span className="font-montserrat font-bold text-black text-sm tracking-[0.2em] uppercase">
-              {lang === 'ru' ? 'Системы бронирования' : 'Booking Systems'}
-            </span>
-          </div>
-          <div className="flex flex-wrap gap-3">
-            {bookingSystems.map((sys, i) => (
-              <div
-                key={i}
-                className="border border-black/10 px-4 py-2 hover:border-black hover:bg-black hover:text-white transition-all duration-200 group cursor-default"
-              >
-                <span className="font-ibmplex text-black/70 group-hover:text-white text-sm transition-colors">
-                  {sys}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-
         {/* Team expertise */}
-        <div className="reveal mt-6 bg-white border border-black/10">
+        <div className="reveal mt-12 bg-white border border-black/10">
           <button
             className="w-full p-8 flex items-center justify-between group"
             onClick={() => setExpandedTeam(!expandedTeam)}

@@ -54,7 +54,7 @@ const AboutPageSection = () => {
           <div>
             <div className="reveal mb-6">
               <span className="font-montserrat text-black/30 text-xs tracking-[0.3em] uppercase">
-                {lang === 'ru' ? 'Аккредитации' : 'Accreditations'}
+                {a.accredsTitle}
               </span>
               <div className="mt-3 w-12 h-px bg-black" />
             </div>

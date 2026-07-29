@@ -6,7 +6,6 @@ import AboutSection from '@/components/AboutSection';
 import AboutPageSection from '@/components/AboutPageSection';
 import ServicesSection from '@/components/ServicesSection';
 import CapabilitiesSection from '@/components/CapabilitiesSection';
-import PartnersSection from '@/components/PartnersSection';
 import ContactsSection from '@/components/ContactsSection';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
@@ -23,7 +22,6 @@ const Index = () => {
         <AboutPageSection />
         <ServicesSection />
         <CapabilitiesSection />
-        <PartnersSection />
         <ContactsSection />
         <Footer />
         <ScrollToTop />
