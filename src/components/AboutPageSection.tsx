@@ -79,6 +79,9 @@ const AboutPageSection = () => {
               </div>
             ))}
           </div>
+          <p className="reveal font-ibmplex text-black/40 text-sm italic mt-6">
+            {a.certsNote}
+          </p>
         </div>
       </div>
     </section>

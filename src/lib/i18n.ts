@@ -52,6 +52,7 @@ export const translations = {
         'Право ведения аудита внутренних проверок по стандарту ISO (Сертификат авторизованного аудитора IRCA)',
         'Лицензия № Л035-01277-66/01100760 на образовательную деятельность (Министерство образования и молодёжной политики Свердловской области)',
       ],
+      certsNote: 'Полный перечень аккредитаций, лицензий и иных разрешительных документов предоставляется по запросу.',
     },
     services: {
       sectionLabel: 'Услуги',
@@ -139,6 +140,7 @@ export const translations = {
         { title: 'IT и технологии', icon: 'Shield', desc: 'Единая защищённая архитектура сетей, СКЗИ, 16 систем бронирования и резервирования' },
         { title: 'Профессиональная команда', icon: 'Users', desc: 'Аккредитованные специалисты всех авиационных направлений, аудиторы, аварийно-спасательная команда' },
         { title: 'Допуски и разрешения', icon: 'KeyRound', desc: 'Постоянные пропуска в контролируемые зоны, доступ на перрон, аэродром и в воздушные суда' },
+        { title: 'Процессинговый центр', icon: 'ServerCog', desc: 'Собственный процессинговый центр для внутренних интеграций и приёма платежей, аттестованный сервер для оформления перевозочных документов в электронном виде' },
       ],
     },
     contacts: {
@@ -233,6 +235,7 @@ export const translations = {
         'Right to conduct internal ISO audits (IRCA Certified Auditor)',
         'License No. Л035-01277-66/01100760 for educational activities (Ministry of Education and Youth Policy of Sverdlovsk Oblast)',
       ],
+      certsNote: 'Complete list of accreditations, licenses and other permits is available upon request.',
     },
     services: {
       sectionLabel: 'Services',
@@ -320,6 +323,7 @@ export const translations = {
         { title: 'IT & Technologies', icon: 'Shield', desc: 'Unified secure network architecture, CIPF, 16 booking and reservation systems' },
         { title: 'Professional Team', icon: 'Users', desc: 'Accredited specialists across all aviation disciplines, auditors, emergency response team' },
         { title: 'Permits & Clearances', icon: 'KeyRound', desc: 'Permanent passes to restricted areas, airside, ramp and aircraft access' },
+        { title: 'Processing Center', icon: 'ServerCog', desc: 'Own processing center for internal integrations and payment acceptance, certified server for electronic travel document issuance' },
       ],
     },
     contacts: {

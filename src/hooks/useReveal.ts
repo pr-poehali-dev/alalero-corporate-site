@@ -10,7 +10,7 @@ export const useReveal = () => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          el.classList.add('visible');
+          el.setAttribute('data-revealed', 'true');
           observer.unobserve(el);
         }
       },
@@ -36,7 +36,7 @@ export const useRevealAll = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
+            entry.target.setAttribute('data-revealed', 'true');
             observer.unobserve(entry.target);
           }
         });
