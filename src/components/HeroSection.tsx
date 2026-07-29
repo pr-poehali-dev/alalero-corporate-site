@@ -45,7 +45,7 @@ const HeroSection = () => {
           >
             <span className="w-8 h-px bg-white/40" />
             <span className="font-montserrat text-white/40 text-xs tracking-[0.3em] uppercase">
-              UMC.AERO
+              {t.hero.label}
             </span>
           </div>
 

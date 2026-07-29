@@ -25,11 +25,7 @@ const Footer = () => {
         <div className="grid lg:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <div className="border border-white/20 inline-flex px-3 py-2 mb-4">
-              <span className="font-montserrat font-bold text-white text-sm tracking-[0.2em] uppercase">
-                AlAero Group
-              </span>
-            </div>
+            <img src="/logo/logo-white.png" alt="AlAero Group" className="h-8 w-auto mb-4" />
             <p className="font-ibmplex text-white/40 text-sm leading-relaxed max-w-xs mb-4">
               {f.description}
             </p>

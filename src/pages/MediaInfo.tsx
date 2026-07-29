@@ -35,11 +35,8 @@ const MediaContent = () => {
     <div className="min-h-screen bg-white">
       {/* Top bar */}
       <div className="bg-black px-6 lg:px-12 py-4 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-3 group">
-          <div className="border border-white/30 px-3 py-1.5 group-hover:border-white transition-colors">
-            <span className="font-montserrat font-bold text-white text-sm tracking-[0.2em] uppercase">AlAero</span>
-          </div>
-          <span className="font-montserrat text-white/40 text-xs tracking-widest uppercase hidden sm:block">Group</span>
+        <Link to="/" className="flex items-center">
+          <img src="/logo/logo-white.png" alt="AlAero Group" className="h-6 w-auto" />
         </Link>
         <Link to="/" className="flex items-center gap-2 font-ibmplex text-white/50 text-sm hover:text-white transition-colors">
           <Icon name="ArrowLeft" size={14} />

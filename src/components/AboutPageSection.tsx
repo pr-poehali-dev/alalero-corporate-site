@@ -33,38 +33,6 @@ const AboutPageSection = () => {
           </div>
         </div>
 
-        {/* Companies */}
-        <div className="reveal mb-6">
-          <span className="font-montserrat text-black/30 text-xs tracking-[0.3em] uppercase">
-            {a.companiesTitle}
-          </span>
-          <div className="mt-3 w-12 h-px bg-black" />
-        </div>
-        <div className="grid lg:grid-cols-3 gap-0 border border-black/10 mb-24">
-          {a.companies.map((company, i) => (
-            <div
-              key={i}
-              className={`reveal reveal-delay-${i + 1} p-8 border-r border-black/10 last:border-r-0 hover:bg-black/[0.02] transition-colors duration-200`}
-            >
-              <span className="font-montserrat text-black/20 text-xs tracking-widest uppercase block mb-4">
-                {company.nameEn}
-              </span>
-              <h4 className="font-montserrat font-bold text-black text-base mb-3 leading-tight">
-                {company.name}
-              </h4>
-              <p className="font-ibmplex text-black/50 text-sm leading-relaxed mb-4">
-                {company.desc}
-              </p>
-              {company.inn !== '—' && (
-                <div className="space-y-1 pt-4 border-t border-black/10">
-                  <div className="font-ibmplex text-black/30 text-xs">ИНН: {company.inn}</div>
-                  <div className="font-ibmplex text-black/30 text-xs">ОГРН: {company.ogrn}</div>
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
-
         {/* Certificates */}
         <div className="grid lg:grid-cols-2 gap-16">
           <div>

@@ -94,20 +94,6 @@ const ContactsSection = () => {
               </div>
             </div>
 
-            {/* Geography mini list */}
-            <div className="reveal reveal-delay-1 mt-10 border-t border-black/10 pt-8">
-              <span className="font-montserrat font-bold text-black text-xs tracking-[0.2em] uppercase mb-4 block">
-                {t.geography.title}
-              </span>
-              <div className="grid grid-cols-2 gap-1">
-                {t.geography.russianCities.map((city, i) => (
-                  <span key={i} className="font-ibmplex text-black/40 text-xs py-1">{city}</span>
-                ))}
-                {t.geography.intlCities.map((city, i) => (
-                  <span key={i} className="font-ibmplex text-black/40 text-xs py-1">{city}</span>
-                ))}
-              </div>
-            </div>
           </div>
 
           {/* Form */}

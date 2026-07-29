@@ -37,16 +37,9 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-12 h-16 flex items-center justify-between">
           <button
             onClick={() => scrollTo('#home')}
-            className="flex items-center gap-3 group"
+            className="flex items-center"
           >
-            <div className="border border-white/30 px-3 py-1.5 group-hover:border-white transition-colors duration-200">
-              <span className="font-montserrat font-bold text-white text-sm tracking-[0.2em] uppercase">
-                AlAero
-              </span>
-            </div>
-            <span className="font-montserrat text-white/60 text-xs tracking-widest uppercase hidden sm:block">
-              Group
-            </span>
+            <img src="/logo/logo-white.png" alt="AlAero Group" className="h-7 w-auto" />
           </button>
 
           <nav className="hidden lg:flex items-center gap-8">

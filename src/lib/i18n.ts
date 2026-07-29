@@ -11,8 +11,9 @@ export const translations = {
       contacts: 'Контакты',
     },
     hero: {
+      label: 'AlAero Group',
       title: 'AlAero Group',
-      subtitle: 'Крупнейший хендлинговый оператор России',
+      subtitle: 'Крупнейший хендлинговый оператор и генеральный уполномоченный агент российских и иностранных эксплуатантов в России',
       description: 'Более 20 лет профессионального обслуживания авиакомпаний в России и за рубежом',
       btnServices: 'Наши услуги',
       btnContact: 'Связаться с нами',
@@ -20,7 +21,7 @@ export const translations = {
     stats: [
       { value: '20+', label: 'лет на рынке' },
       { value: '35+', label: 'авиакомпаний-партнёров' },
-      { value: '10+', label: 'городов присутствия' },
+      { value: '15+', label: 'городов присутствия' },
       { value: '15+', label: 'договоров с перевозчиками' },
     ],
     about: {
@@ -29,15 +30,6 @@ export const translations = {
       p1: 'Группа компаний авиационного бизнеса "AlAero" — один из крупнейших хендлинговых операторов, обеспечивающих обслуживание рейсов, пассажиров и авиакомпаний в России и за рубежом.',
       p2: 'Мы выстроили устойчивую операционную модель на базе собственных обособленных подразделений и франчайзинговых офисов в российских и зарубежных аэропортах.',
       p3: 'Штаб-квартира группы расположена в Екатеринбурге, в международном аэропорту Кольцово — нашем базовом аэропорте.',
-    },
-    geography: {
-      sectionLabel: 'Присутствие',
-      title: 'География присутствия',
-      russia: 'Россия',
-      international: 'Международное присутствие',
-      russianCities: ['Екатеринбург (аэропорт Кольцово)', 'Омск', 'Красноярск', 'Новосибирск', 'Тюмень', 'Казань', 'Саратов', 'Мурманск'],
-      intlCities: ['Астана, Казахстан', 'Каир, Египет'],
-      note: 'Мы постоянно расширяем географию присутствия для обеспечения комплексного обслуживания наших партнёров.',
     },
     advantages: {
       sectionLabel: 'Преимущества',
@@ -248,8 +240,9 @@ export const translations = {
       contacts: 'Contact',
     },
     hero: {
+      label: 'AlAero Group',
       title: 'AlAero Group',
-      subtitle: "Russia's Leading Ground Handling Operator",
+      subtitle: "Russia's Leading Ground Handling Operator and General Authorized Agent of Russian and Foreign Operators in Russia",
       description: 'Over 20 years of professional airline services in Russia and abroad',
       btnServices: 'Our Services',
       btnContact: 'Contact Us',
@@ -257,7 +250,7 @@ export const translations = {
     stats: [
       { value: '20+', label: 'years in market' },
       { value: '35+', label: 'airline partners' },
-      { value: '10+', label: 'cities of presence' },
+      { value: '15+', label: 'cities of presence' },
       { value: '15+', label: 'carrier agreements' },
     ],
     about: {
@@ -266,15 +259,6 @@ export const translations = {
       p1: 'AlAero Group is one of the largest ground handling operators providing flight, passenger and airline services in Russia and internationally.',
       p2: 'We have built a sustainable operational model based on our own subdivisions and franchise offices in Russian and foreign airports.',
       p3: 'The Group\'s headquarters is located in Yekaterinburg, at Koltsovo International Airport — our home base.',
-    },
-    geography: {
-      sectionLabel: 'Presence',
-      title: 'Geographic Presence',
-      russia: 'Russia',
-      international: 'International',
-      russianCities: ['Yekaterinburg (Koltsovo Airport)', 'Omsk', 'Krasnoyarsk', 'Novosibirsk', 'Tyumen', 'Kazan', 'Saratov', 'Murmansk'],
-      intlCities: ['Astana, Kazakhstan', 'Cairo, Egypt'],
-      note: 'We continuously expand our geographic presence to provide comprehensive services to our partners.',
     },
     advantages: {
       sectionLabel: 'Advantages',
