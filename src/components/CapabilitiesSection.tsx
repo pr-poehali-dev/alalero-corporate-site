@@ -15,7 +15,7 @@ const CapabilitiesSection = () => {
           </span>
           <div className="mt-3 w-12 h-px bg-black" />
         </div>
-        <h2 className="reveal font-montserrat font-black text-black text-4xl lg:text-5xl leading-tight mb-16">
+        <h2 className="reveal font-montserrat font-light text-black text-4xl lg:text-5xl leading-tight mb-16">
           {t.capabilities.title}
         </h2>
 

@@ -30,7 +30,7 @@ const PrivacyContent = () => {
             {isRu ? 'Юридический документ' : 'Legal document'}
           </span>
           <div className="mt-3 w-12 h-px bg-black" />
-          <h1 className="font-montserrat font-black text-black text-3xl lg:text-4xl mt-6">
+          <h1 className="font-montserrat font-light text-black text-3xl lg:text-4xl mt-6">
             {isRu ? 'Политика конфиденциальности' : 'Privacy Policy'}
           </h1>
         </div>

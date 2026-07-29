@@ -51,14 +51,19 @@ const HeroSection = () => {
 
           {/* Main title */}
           <h1
-            className={`font-montserrat text-white font-light text-5xl sm:text-6xl lg:text-8xl leading-none tracking-tight mb-6 transition-all duration-700 ${
+            className={`text-white mb-6 transition-all duration-700 ${
               loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
             style={{ transitionDelay: '0.2s' }}
           >
-            AlAero
-            <br />
-            <span className="text-white/30 font-normal text-3xl sm:text-4xl lg:text-6xl tracking-[0.15em]">Group</span>
+            <span className="inline-flex flex-col items-center leading-none">
+              <span className="font-montserrat font-light text-5xl sm:text-6xl lg:text-8xl tracking-tight">
+                AlAero
+              </span>
+              <span className="font-montserrat font-normal text-white/30 text-2xl sm:text-3xl lg:text-4xl tracking-[0.12em] -mt-2">
+                Group
+              </span>
+            </span>
           </h1>
 
           {/* Subtitle */}

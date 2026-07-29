@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 lg:py-24">
         {/* Contact heading */}
         <div className="mb-16">
-          <h2 className="font-montserrat font-black text-white text-4xl lg:text-5xl leading-tight">
+          <h2 className="font-montserrat font-light text-white text-4xl lg:text-5xl leading-tight">
             {c.sectionLabel}
           </h2>
           <div className="mt-4 w-12 h-px bg-white/30" />

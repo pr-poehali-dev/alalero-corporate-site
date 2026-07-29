@@ -17,7 +17,7 @@ const ServicesSection = () => {
           <div className="mt-3 w-12 h-px bg-white/30" />
         </div>
         <div className="reveal mb-6">
-          <h2 className="font-montserrat font-black text-white text-4xl lg:text-5xl leading-tight">
+          <h2 className="font-montserrat font-light text-white text-4xl lg:text-5xl leading-tight">
             {t.services.title}
           </h2>
         </div>

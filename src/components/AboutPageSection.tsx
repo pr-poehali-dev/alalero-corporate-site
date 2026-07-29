@@ -20,13 +20,13 @@ const AboutPageSection = () => {
         {/* History + Mission */}
         <div className="grid lg:grid-cols-2 gap-16 mb-24">
           <div className="reveal">
-            <h3 className="font-montserrat font-black text-black text-2xl mb-6 uppercase tracking-tight">
+            <h3 className="font-montserrat font-normal text-black text-2xl mb-6 uppercase tracking-[0.1em]">
               {a.historyTitle}
             </h3>
             <p className="font-ibmplex text-black/60 text-base leading-relaxed">{a.historyText}</p>
           </div>
           <div className="reveal reveal-delay-1">
-            <h3 className="font-montserrat font-black text-black text-2xl mb-6 uppercase tracking-tight">
+            <h3 className="font-montserrat font-normal text-black text-2xl mb-6 uppercase tracking-[0.1em]">
               {a.missionTitle}
             </h3>
             <p className="font-ibmplex text-black/60 text-base leading-relaxed italic">{a.missionText}</p>
