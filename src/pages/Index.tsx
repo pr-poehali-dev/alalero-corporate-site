@@ -2,7 +2,6 @@ import { LangProvider } from '@/contexts/LangContext';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import StatsSection from '@/components/StatsSection';
-import AboutSection from '@/components/AboutSection';
 import AboutPageSection from '@/components/AboutPageSection';
 import ServicesSection from '@/components/ServicesSection';
 import CapabilitiesSection from '@/components/CapabilitiesSection';
@@ -18,7 +17,6 @@ const Index = () => {
         <Navbar />
         <HeroSection />
         <StatsSection />
-        <AboutSection />
         <AboutPageSection />
         <ServicesSection />
         <CapabilitiesSection />
