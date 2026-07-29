@@ -12,13 +12,10 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 lg:py-24">
         {/* Contact heading */}
         <div className="mb-16">
-          <span className="font-montserrat text-white/30 text-xs tracking-[0.3em] uppercase">
+          <h2 className="font-montserrat font-black text-white text-4xl lg:text-5xl leading-tight">
             {c.sectionLabel}
-          </span>
-          <div className="mt-3 w-12 h-px bg-white/30" />
-          <h2 className="font-montserrat font-black text-white text-4xl lg:text-5xl leading-tight mt-6">
-            {c.title}
           </h2>
+          <div className="mt-4 w-12 h-px bg-white/30" />
         </div>
 
         <div className="grid lg:grid-cols-3 gap-12 lg:gap-16 mb-16">

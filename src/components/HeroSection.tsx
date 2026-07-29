@@ -51,14 +51,14 @@ const HeroSection = () => {
 
           {/* Main title */}
           <h1
-            className={`font-montserrat text-white font-black text-5xl sm:text-6xl lg:text-8xl leading-none tracking-tight mb-6 transition-all duration-700 ${
+            className={`font-montserrat text-white font-light text-5xl sm:text-6xl lg:text-8xl leading-none tracking-tight mb-6 transition-all duration-700 ${
               loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
             style={{ transitionDelay: '0.2s' }}
           >
             AlAero
             <br />
-            <span className="text-white/20">Group</span>
+            <span className="text-white/30 font-normal text-3xl sm:text-4xl lg:text-6xl tracking-[0.15em]">Group</span>
           </h1>
 
           {/* Subtitle */}
