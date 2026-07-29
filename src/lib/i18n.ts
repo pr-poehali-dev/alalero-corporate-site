@@ -149,10 +149,9 @@ export const translations = {
       title: 'Наши возможности',
       items: [
         { title: 'Инфраструктура', icon: 'Building2', desc: 'Собственные офисы в аэропортах, складские помещения, номерной фонд в нескольких гостиницах' },
-        { title: 'IT и технологии', icon: 'Shield', desc: 'Единая защищённая архитектура сетей, СКЗИ, 16 систем бронирования и резервирования' },
+        { title: 'IT и технологии, процессинговый центр', icon: 'Shield', desc: 'Единая защищённая архитектура сетей, СКЗИ, 16 систем бронирования и резервирования, собственный процессинговый центр для внутренних интеграций и приёма платежей, аттестованный сервер для оформления перевозочных документов в электронном виде' },
         { title: 'Профессиональная команда', icon: 'Users', desc: 'Аккредитованные специалисты всех авиационных направлений, аудиторы, аварийно-спасательная команда' },
         { title: 'Допуски и разрешения', icon: 'KeyRound', desc: 'Постоянные пропуска в контролируемые зоны, доступ на перрон, аэродром и в воздушные суда' },
-        { title: 'Процессинговый центр', icon: 'ServerCog', desc: 'Собственный процессинговый центр для внутренних интеграций и приёма платежей, аттестованный сервер для оформления перевозочных документов в электронном виде' },
       ],
     },
     contacts: {
@@ -178,16 +177,12 @@ export const translations = {
     },
     footer: {
       description: 'Более 20 лет профессионального обслуживания авиакомпаний в России и за рубежом',
-      quickLinks: 'Быстрые ссылки',
       contactsTitle: 'Контакты',
       legal: '© 2024 AlAero Group. Все права защищены.',
       legalEntities: [
-        'ООО «ПРИМЭЙР-СЕРВИС» ИНН 6658214500 | ОГРН 1056602819426',
-        'ООО «ТРАНСАЭРО СЕРВИС» ИНН 6685158438 | ОГРН 1196658004707',
+        'ООО «АЛАЭРО ГРУПП»',
       ],
       privacyPolicy: 'Политика конфиденциальности',
-      mediaInfo: 'Информация о СМИ',
-      mediaLabel: 'СМИ «TRANSAERO» | Свидетельство ЭЛ № ФС77-86800 | 18+',
     },
     cookies: {
       text: 'Мы используем cookies для улучшения работы сайта.',
@@ -344,10 +339,9 @@ export const translations = {
       title: 'Our Capabilities',
       items: [
         { title: 'Infrastructure', icon: 'Building2', desc: 'Own offices at airports, storage facilities, hotel room inventory' },
-        { title: 'IT & Technologies', icon: 'Shield', desc: 'Unified secure network architecture, CIPF, 16 booking and reservation systems' },
+        { title: 'IT & Technologies, Processing Center', icon: 'Shield', desc: 'Unified secure network architecture, CIPF, 16 booking and reservation systems, own processing center for internal integrations and payment acceptance, certified server for electronic travel document issuance' },
         { title: 'Professional Team', icon: 'Users', desc: 'Accredited specialists across all aviation disciplines, auditors, emergency response team' },
         { title: 'Permits & Clearances', icon: 'KeyRound', desc: 'Permanent passes to restricted areas, airside, ramp and aircraft access' },
-        { title: 'Processing Center', icon: 'ServerCog', desc: 'Own processing center for internal integrations and payment acceptance, certified server for electronic travel document issuance' },
       ],
     },
     contacts: {
@@ -373,16 +367,12 @@ export const translations = {
     },
     footer: {
       description: 'Over 20 years of professional airline services in Russia and abroad',
-      quickLinks: 'Quick Links',
       contactsTitle: 'Contacts',
       legal: '© 2024 AlAero Group. All rights reserved.',
       legalEntities: [
-        'PRIMAIR SERVICE LLC INN 6658214500 | OGRN 1056602819426',
-        'TRANSAERO SERVICES LLC INN 6685158438 | OGRN 1196658004707',
+        'AlAERO GROUP LLC',
       ],
       privacyPolicy: 'Privacy Policy',
-      mediaInfo: 'Media Information',
-      mediaLabel: 'Media TRANSAERO | Certificate ЭЛ № ФС77-86800 | 18+',
     },
     cookies: {
       text: 'We use cookies to improve the website experience.',

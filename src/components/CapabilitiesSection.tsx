@@ -20,11 +20,11 @@ const CapabilitiesSection = () => {
         </h2>
 
         {/* Capability cards */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-0 border border-black/10 bg-white mb-0">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-0 border border-black/10 bg-white mb-0">
           {t.capabilities.items.map((item, i) => (
             <div
               key={i}
-              className={`reveal reveal-delay-${(i % 5) + 1} p-8 border-black/10 border-b lg:border-b-0 lg:border-r lg:last:border-r-0 group hover:bg-black hover:border-black transition-all duration-300`}
+              className={`reveal reveal-delay-${(i % 4) + 1} p-8 border-black/10 border-b lg:border-b-0 lg:border-r lg:last:border-r-0 group hover:bg-black hover:border-black transition-all duration-300`}
             >
               <Icon
                 name={item.icon as 'Building2'}

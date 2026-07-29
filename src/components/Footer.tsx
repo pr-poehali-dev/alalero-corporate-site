@@ -5,23 +5,10 @@ const Footer = () => {
   const { t, lang } = useLang();
   const f = t.footer;
 
-  const scrollTo = (href: string) => {
-    const el = document.querySelector(href);
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
-  };
-
-  const navLinks = [
-    { href: '#home', label: t.nav.home },
-    { href: '#about', label: t.nav.about },
-    { href: '#services', label: t.nav.services },
-    { href: '#capabilities', label: t.nav.capabilities },
-    { href: '#contacts', label: t.nav.contacts },
-  ];
-
   return (
     <footer className="bg-black border-t border-white/10">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16">
-        <div className="grid lg:grid-cols-3 gap-12 mb-12">
+        <div className="grid lg:grid-cols-2 gap-12 mb-12">
           {/* Brand */}
           <div>
             <img src="/logo/logo-white.png" alt="AlAero Group" className="h-8 w-auto mb-4" />
@@ -29,26 +16,10 @@ const Footer = () => {
               {f.description}
             </p>
             <p className="font-ibmplex text-white/20 text-xs">
-              {lang === 'ru' ? 'Штаб-квартира: Международный аэропорт Кольцово, Екатеринбург' : 'HQ: Koltsovo International Airport, Yekaterinburg'}
+              {lang === 'ru'
+                ? 'Штаб-квартира: Международный аэропорт Кольцово, Россия, Екатеринбург'
+                : 'HQ: Koltsovo International Airport, Russia, Yekaterinburg'}
             </p>
-          </div>
-
-          {/* Links */}
-          <div>
-            <span className="font-montserrat font-bold text-white/30 text-xs tracking-[0.2em] uppercase block mb-4">
-              {f.quickLinks}
-            </span>
-            <div className="grid grid-cols-2 gap-1">
-              {navLinks.map((link) => (
-                <button
-                  key={link.href}
-                  onClick={() => scrollTo(link.href)}
-                  className="font-ibmplex text-white/50 text-sm text-left hover:text-white transition-colors py-1"
-                >
-                  {link.label}
-                </button>
-              ))}
-            </div>
           </div>
 
           {/* Contacts */}
@@ -88,27 +59,13 @@ const Footer = () => {
             ))}
           </div>
 
-          <div className="flex flex-wrap gap-x-4 gap-y-2 pt-2">
+          <div className="pt-2">
             <Link
               to="/privacy-policy"
               className="font-ibmplex text-white/30 text-xs hover:text-white/60 transition-colors underline"
             >
               {f.privacyPolicy}
             </Link>
-            <Link
-              to="/media-info"
-              className="font-ibmplex text-white/30 text-xs hover:text-white/60 transition-colors underline"
-            >
-              {f.mediaInfo}
-            </Link>
-          </div>
-
-          <div className="pt-1 border-t border-white/5">
-            <p className="font-ibmplex text-white/15 text-xs leading-relaxed">
-              {lang === 'ru'
-                ? 'СМИ «TRANSAERO» | Свидетельство ЭЛ № ФС77-86800 от 05.02.2024 | Учредитель: ООО «ТРАНСАЭРО СЕРВИС» | Гл. редактор: Нечипуренко А.Д. | 18+'
-                : 'Media TRANSAERO | Certificate ЭЛ № ФС77-86800 dated 05.02.2024 | Founder: TRANSAERO SERVICES LLC | Editor: A.D. Nechipurenko | 18+'}
-            </p>
           </div>
         </div>
       </div>
