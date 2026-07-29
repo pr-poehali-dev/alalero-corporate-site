@@ -32,7 +32,7 @@ const ServicesSection = () => {
           {t.services.list.map((service, i) => (
             <div
               key={service.id}
-              className={`reveal reveal-delay-${(i % 3) + 1} border-r border-b border-white/10 last:border-r-0 [&:nth-child(3n)]:border-r-0 p-8 cursor-pointer group transition-colors duration-300 ${
+              className={`reveal reveal-delay-${(i % 3) + 1} border-b border-white/10 lg:border-r lg:[&:nth-child(3n)]:border-r-0 p-8 cursor-pointer group transition-colors duration-300 ${
                 active === service.id ? 'bg-white' : 'hover:bg-white/5'
               }`}
               onClick={() => setActive(active === service.id ? null : service.id)}
