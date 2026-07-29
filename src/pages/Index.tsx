@@ -5,7 +5,6 @@ import StatsSection from '@/components/StatsSection';
 import AboutPageSection from '@/components/AboutPageSection';
 import ServicesSection from '@/components/ServicesSection';
 import CapabilitiesSection from '@/components/CapabilitiesSection';
-import ContactsSection from '@/components/ContactsSection';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import CookieBanner from '@/components/CookieBanner';
@@ -20,7 +19,6 @@ const Index = () => {
         <AboutPageSection />
         <ServicesSection />
         <CapabilitiesSection />
-        <ContactsSection />
         <Footer />
         <ScrollToTop />
         <CookieBanner />

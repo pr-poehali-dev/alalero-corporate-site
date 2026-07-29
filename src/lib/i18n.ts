@@ -163,25 +163,11 @@ export const translations = {
       phone: '+7 (343) 382 55 75',
       email: 'press@umc.aero',
       workHours: 'Режим работы: 24/7',
-      formTitle: 'Форма обратной связи',
-      fields: {
-        name: 'Имя',
-        company: 'Компания',
-        email: 'Email',
-        phone: 'Телефон',
-        message: 'Сообщение',
-        consent: 'Я согласен на обработку персональных данных',
-        submit: 'Отправить сообщение',
-      },
-      successMsg: 'Сообщение отправлено! Мы свяжемся с вами в ближайшее время.',
     },
     footer: {
       description: 'Более 20 лет профессионального обслуживания авиакомпаний в России и за рубежом',
       contactsTitle: 'Контакты',
       legal: '© 2024 AlAero Group. Все права защищены.',
-      legalEntities: [
-        'ООО «АЛАЭРО ГРУПП»',
-      ],
       privacyPolicy: 'Политика конфиденциальности',
     },
     cookies: {
@@ -353,25 +339,11 @@ export const translations = {
       phone: '+7 (343) 382 55 75',
       email: 'press@umc.aero',
       workHours: 'Working hours: 24/7',
-      formTitle: 'Contact Form',
-      fields: {
-        name: 'Name',
-        company: 'Company',
-        email: 'Email',
-        phone: 'Phone',
-        message: 'Message',
-        consent: 'I agree to the processing of my personal data',
-        submit: 'Send Message',
-      },
-      successMsg: 'Message sent! We will contact you shortly.',
     },
     footer: {
       description: 'Over 20 years of professional airline services in Russia and abroad',
       contactsTitle: 'Contacts',
       legal: '© 2024 AlAero Group. All rights reserved.',
-      legalEntities: [
-        'AlAERO GROUP LLC',
-      ],
       privacyPolicy: 'Privacy Policy',
     },
     cookies: {
