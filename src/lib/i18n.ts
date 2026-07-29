@@ -10,8 +10,6 @@ export const translations = {
       contacts: 'Контакты',
     },
     hero: {
-      label: 'AlAero Group',
-      title: 'AlAero Group',
       subtitle: 'Крупнейший хендлинговый оператор и генеральный уполномоченный агент российских и иностранных эксплуатантов в России',
       description: 'Более 20 лет профессионального обслуживания авиакомпаний в России и за рубежом',
       btnServices: 'Наши услуги',
@@ -25,7 +23,6 @@ export const translations = {
     ],
     advantages: {
       sectionLabel: 'Преимущества',
-      title: 'Почему выбирают AlAero',
       items: [
         { title: 'Сертификация и качество', desc: 'Сертификаты ISO 9001:2015, ISO 45001:2018, ISO 31000:2018, DIN EN 9100:2018' },
         { title: 'Полный спектр услуг', desc: 'Хендлинг, продажи, обучение, представительство — все услуги в одной компании' },
@@ -172,7 +169,6 @@ export const translations = {
     cookies: {
       text: 'Мы используем cookies для улучшения работы сайта.',
       accept: 'Принять',
-      more: 'Подробнее',
     },
   },
 
@@ -185,8 +181,6 @@ export const translations = {
       contacts: 'Contact',
     },
     hero: {
-      label: 'AlAero Group',
-      title: 'AlAero Group',
       subtitle: "Russia's Leading Ground Handling Operator and General Authorized Agent of Russian and Foreign Operators in Russia",
       description: 'Over 20 years of professional airline services in Russia and abroad',
       btnServices: 'Our Services',
@@ -200,7 +194,6 @@ export const translations = {
     ],
     advantages: {
       sectionLabel: 'Advantages',
-      title: 'Why Choose AlAero',
       items: [
         { title: 'Certification & Quality', desc: 'ISO 9001:2015, ISO 45001:2018, ISO 31000:2018, DIN EN 9100:2018' },
         { title: 'Full Range of Services', desc: 'Handling, sales, training, representation — all services in one company' },
@@ -347,7 +340,6 @@ export const translations = {
     cookies: {
       text: 'We use cookies to improve the website experience.',
       accept: 'Accept',
-      more: 'Learn more',
     },
   },
 };
