@@ -38,7 +38,7 @@ export const translations = {
       historyTitle: 'История',
       historyText: 'Группа компаний авиационного бизнеса «AlAero» более 20 лет работает в авиационной отрасли. Сегодня мы являемся одним из крупнейших хендлинговых операторов, обеспечивающих обслуживание рейсов, пассажиров и авиакомпаний в России и за рубежом. Мы выстроили устойчивую операционную модель на базе собственных обособленных подразделений и франчайзинговых офисов в российских и зарубежных аэропортах. Штаб-квартира группы и центральный офис расположены в городе Екатеринбурге, в международном аэропорту Кольцово, который является базовым аэропортом группы.',
       missionTitle: 'Миссия',
-      missionText: 'Обеспечивать профессиональное, безопасное и качественное наземное обслуживание авиакомпаний, создавая надёжную операционную инфраструктуру для авиационного бизнеса в России и за её пределами.',
+      missionText: 'Обеспечивать профессиональное, безопасное и качественное всестороннее наземное операционное сопровождение и обслуживание, включая организацию обслуживания российских и иностранных эксплуатантов, создавая надёжную операционную инфраструктуру по типу единой экосистемы для авиационного бизнеса как в России, так и за её пределами.',
       certsTitle: 'Сертификаты, аккредитации и лицензии',
       certsAll: [
         'ГОСТ Р ИСО 9001-2015 (ISO 9001:2015) — Система менеджмента качества',
@@ -221,7 +221,7 @@ export const translations = {
       historyTitle: 'History',
       historyText: 'AlAero aviation business group has been operating in the aviation industry for over 20 years. Today we are one of the largest ground handling operators providing flight, passenger and airline services in Russia and abroad. We have built a sustainable operational model based on our own subdivisions and franchise offices in Russian and foreign airports. The Group headquarters and central office are located in Yekaterinburg, at Koltsovo International Airport, which is the Group\'s home base.',
       missionTitle: 'Mission',
-      missionText: 'To provide professional, safe and high-quality ground handling services for airlines, creating a reliable operational infrastructure for aviation business in Russia and beyond.',
+      missionText: 'To provide professional, safe and high-quality comprehensive ground operational support and services, including the organization of services for Russian and foreign operators, creating a reliable operational infrastructure in the form of a unified ecosystem for aviation business both in Russia and beyond.',
       certsTitle: 'Certificates, Accreditations & Licenses',
       certsAll: [
         'ISO 9001:2015 — Quality Management System',
